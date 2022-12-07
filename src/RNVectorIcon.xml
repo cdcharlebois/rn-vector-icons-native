@@ -1,16 +1,52 @@
-<?xml version="1.0" encoding="utf-8"?>
-<widget id="mendix.rnvectoricon.RNVectorIcon" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
-        supportedPlatform="Native"
-        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+<?xml version="1.0" encoding="utf-8" ?>
+<widget
+    id="mendix.rnvectoricon.RNVectorIcon"
+    pluginWidget="true"
+    needsEntityContext="true"
+    offlineCapable="true"
+    supportedPlatform="Native"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
+>
     <name>RNVector Icon</name>
     <description>Icon</description>
-    <icon/>
+    <icon />
     <properties>
         <propertyGroup caption="General">
-            <property key="yourName" type="string" required="false">
-                <caption>Name</caption>
-                <description>Enter your name</description>
+            <property key="family" type="enumeration" defaultValue="fa" required="true">
+                <caption>Icon Family</caption>
+                <description>Any Icon Family in RN Vector Icons</description>
+                <enumerationValues>
+                    <enumerationValue key="fa">FontAwesome</enumerationValue>
+                    <enumerationValue key="fa5">FontAwesome5</enumerationValue>
+                    <enumerationValue key="ant">Ant</enumerationValue>
+                    <enumerationValue key="entypo">Entypo</enumerationValue>
+                    <enumerationValue key="evil">Evil</enumerationValue>
+                    <enumerationValue key="feather">Feather</enumerationValue>
+                    <enumerationValue key="fa5pro">FontAwesome5Pro</enumerationValue>
+                    <enumerationValue key="fontisto">Fontisto</enumerationValue>
+                    <enumerationValue key="foundation">Foundation</enumerationValue>
+                    <enumerationValue key="ionicon">Ionicon</enumerationValue>
+                    <enumerationValue key="materialCommunity">MaterialCommunity</enumerationValue>
+                    <enumerationValue key="material">Material</enumerationValue>
+                    <enumerationValue key="zocial">Zocial</enumerationValue>
+                </enumerationValues>
+            </property> 
+            <property key="size" type="expression" defaultValue="30">
+              <caption>Size</caption>
+              <description></description>
+              <returnType type="Integer" />
+            </property>
+            <property key="iconName" type="expression" defaultValue="'check'">
+              <caption>Icon Name</caption>
+              <description>See a full list of available icons for each family here: https://oblador.github.io/react-native-vector-icons/</description>
+              <returnType type="String" />
+            </property>
+            <property key="color" type="expression" defaultValue="'red'">
+              <caption>Color</caption>
+              <description>Any HTML color</description>
+              <returnType type="String" />
             </property>
         </propertyGroup>
     </properties>
