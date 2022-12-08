@@ -30,6 +30,8 @@
                     <enumerationValue key="ionicon">Ionicon</enumerationValue>
                     <enumerationValue key="materialCommunity">MaterialCommunity</enumerationValue>
                     <enumerationValue key="material">Material</enumerationValue>
+                    <enumerationValue key="octicon">Octicon</enumerationValue>
+                    <enumerationValue key="simpleline">Simpleline</enumerationValue>
                     <enumerationValue key="zocial">Zocial</enumerationValue>
                 </enumerationValues>
             </property> 

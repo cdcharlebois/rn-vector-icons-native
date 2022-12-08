@@ -22,7 +22,7 @@ Use https://oblador.github.io/react-native-vector-icons/ to searxh for icons
 
 export function RNVectorIcon({ family, iconName, size, color, style }) {
     const renderIcon = (family, iconName, size, color) => {
-        const _args = { name: iconName, size, color };
+        const _args = { name: iconName, size, color, style };
         switch (family) {
             case "fa":
                 return <FaIcon {..._args} />;
@@ -58,6 +58,6 @@ export function RNVectorIcon({ family, iconName, size, color, style }) {
     };
 
     return iconName.status === "available" && color.status === "available" && size.status === "available" ? (
-        <View>{renderIcon(family, iconName.value, size.value * 1, color.value)}</View>
+        renderIcon(family, iconName.value, size.value * 1, color.value, style)
     ) : null;
 }
